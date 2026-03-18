@@ -127,8 +127,8 @@ export function ContactSection() {
                 </CardContent>
               </Card>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6" suppressHydrationWarning>
-                <div suppressHydrationWarning>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
                   <Input
                     placeholder="Nombre completo"
                     value={formData.name}
@@ -137,7 +137,7 @@ export function ContactSection() {
                     className="h-12"
                   />
                 </div>
-                <div suppressHydrationWarning>
+                <div>
                   <Input
                     type="email"
                     placeholder="Email"
@@ -147,7 +147,7 @@ export function ContactSection() {
                     className="h-12"
                   />
                 </div>
-                <div suppressHydrationWarning>
+                <div>
                   <Input
                     type="tel"
                     placeholder="Teléfono"
@@ -157,7 +157,7 @@ export function ContactSection() {
                     className="h-12"
                   />
                 </div>
-                <div suppressHydrationWarning>
+                <div>
                   <Select onValueChange={(value) => setFormData({ ...formData, area: value })} value={formData.area}>
                     <SelectTrigger className="h-12">
                       <SelectValue placeholder="Área del proyecto" />
@@ -171,7 +171,7 @@ export function ContactSection() {
                     </SelectContent>
                   </Select>
                 </div>
-                <div suppressHydrationWarning>
+                <div>
                   <Select onValueChange={(value) => setFormData({ ...formData, service: value })} value={formData.service}>
                     <SelectTrigger className="h-12">
                       <SelectValue placeholder="Tipo de servicio" />
@@ -185,7 +185,7 @@ export function ContactSection() {
                     </SelectContent>
                   </Select>
                 </div>
-                <div suppressHydrationWarning>
+                <div>
                   <Textarea
                     placeholder="Mensaje"
                     value={formData.message}
