@@ -4,7 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { ServicesSection } from "@/components/services-section"
 import { PortfolioSection } from "@/components/portfolio-section"
 import { StatsAchievements } from "@/components/stats-achievements"
-import { ContactSection } from "@/components/contact-section"
+import { ContactSection } from "@/components/contact-section-wrapper"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
