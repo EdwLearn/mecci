@@ -30,3 +30,4 @@ next-env.d.ts
 mecci-cpanel.zip
 *.MOV
 *.mov
+.env*.local

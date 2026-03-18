@@ -127,7 +127,7 @@ export function ContactSection() {
                 </CardContent>
               </Card>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" suppressHydrationWarning>
                 <div>
                   <Input
                     placeholder="Nombre completo"
